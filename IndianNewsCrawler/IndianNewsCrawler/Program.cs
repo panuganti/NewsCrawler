@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IndianNewsCrawler
 {
@@ -10,6 +6,9 @@ namespace IndianNewsCrawler
     {
         static void Main(string[] args)
         {
+            //var articles = TOICrawler.GetHomepageUrls();
+            var feeds = TOICrawler.LoadRssFeeds("http://timesofindia.indiatimes.com/rssfeedsdefault.cms");
+            Console.WriteLine(feeds.Length);
         }
     }
 }
