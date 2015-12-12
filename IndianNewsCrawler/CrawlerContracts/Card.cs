@@ -8,19 +8,6 @@ using System.Threading.Tasks;
 namespace CrawlerContracts
 {
     [DataContract]
-    public class Card
-    {
-        [DataMember]
-        public string Guid { get; set; }
-        [DataMember]
-        public string ShortStoryId { get; set; }
-        [DataMember]
-        public string ExpandedCardId { get; set; }
-        [DataMember]
-        public string SocialCardId { get; set; }
-    }
-
-    [DataContract]
     public class SocialCard
     {
         [DataMember]
@@ -32,27 +19,34 @@ namespace CrawlerContracts
     }
 
     [DataContract]
-    public class ShortStory
+    public class Feed
     {
         [DataMember]
-        public string Guid { get; set; }
+        public string Title { get; set; }
         [DataMember]
-        public string ImageUrl { get; set; }
+        public string Description { get; set; }
         [DataMember]
-        public string Headline { get; set; }
+        public string Link { get; set; }
         [DataMember]
-        public string Summary { get; set; }
-        [DataMember]
-        public string Source { get; set; }        
+        public DateTime PublishedDate { get; set; }
     }
 
     [DataContract]
-    public class ExpandedCard
+    public class ShortStory : Feed
     {
+        [DataMember]
         public string Guid { get; set; }
-        public string Headline { get; set; }
+        [DataMember]
         public string ImageUrl { get; set; }
-        public string Body { get; set; }
+        [DataMember]
+        public Source Source { get; set; }
     }
-
+    [DataContract]
+    public enum Source
+    {
+        [EnumMember]
+        TOI,
+        [EnumMember]
+        PTI
+    }
 }
