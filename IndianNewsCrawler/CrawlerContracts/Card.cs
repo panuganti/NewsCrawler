@@ -41,12 +41,15 @@ namespace CrawlerContracts
         [DataMember]
         public Source Source { get; set; }
     }
+    
     [DataContract]
     public enum Source
     {
         [EnumMember]
         TOI,
         [EnumMember]
-        PTI
+        PTI,
+        [EnumMember]
+        NDTV
     }
 }
