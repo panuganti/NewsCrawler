@@ -13,9 +13,16 @@ namespace IndianNewsCrawler
         {
             var webpage = new HtmlWeb();
             HtmlDocument doc = webpage.Load(url);
-            var imageNodes = doc.DocumentNode.Descendants("img").Where(x => x.Attributes.Contains("src")).Select(x => x.Attributes["src"].Value.ToString());
-            var localImageNodes = imageNodes.Where(x => x.StartsWith("/")).ToArray();
-            return localImageNodes.First(); ;
+            try
+            {
+                var imageNodes = doc.DocumentNode.Descendants("img").Where(x => x.Attributes.Contains("src")).Select(x => x.Attributes["src"].Value.ToString());
+                var localImageNodes = imageNodes.Where(x => x.StartsWith("/")).ToArray();
+                return localImageNodes.First(); ;
+            }
+            catch (Exception e)
+            {
+                return string.Empty;
+            }
         }
 
 
