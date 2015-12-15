@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 
@@ -37,17 +40,18 @@ namespace NewsServiceLibrary
         [DataMember]
         public string ImageUrl { get; set; }
         [DataMember]
-        public Source Source { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public string Source { get; set; }
     }
     
      [DataContract]
     public enum Source
     {
-        [EnumMember]
+        [EnumMember(Value = "TOI")]
         TOI,
-        [EnumMember]
+        [EnumMember(Value = "PTI")]
         PTI,
-        [EnumMember]
+        [EnumMember(Value = "NDTV")]
         NDTV
     }
 }

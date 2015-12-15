@@ -43,13 +43,21 @@ namespace IndianNewsCrawler
         }
 
         internal string GetRealUrl(string url)
-        {            
-            WebRequest request = WebRequest.Create(url);
-            request.Method = WebRequestMethods.Http.Head;
-            WebResponse response = request.GetResponse();
-            var realUrl = response.ResponseUri.ToString();
-            Console.WriteLine("Real Url: {0}", realUrl);
-            return realUrl;
+        {
+            try {
+                WebRequest request = WebRequest.Create(url);
+                request.Timeout = 10000;
+                request.Method = WebRequestMethods.Http.Head;
+                WebResponse response = request.GetResponse();
+                var realUrl = response.ResponseUri.ToString();
+                Console.WriteLine("Real Url: {0}", realUrl);
+                return realUrl;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return url;
+            }
         }
     }
 
