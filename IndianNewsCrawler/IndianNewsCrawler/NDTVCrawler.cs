@@ -32,15 +32,22 @@ namespace IndianNewsCrawler
 
         public IEnumerable<string> CrawlNDTVPage(string url)
         {
-            var webpage = new HtmlWeb();
-            HtmlDocument doc = webpage.Load(url);
-            List<string> imageArray = null;
-            foreach (var template in _templates)
-            {
-                imageArray = template(doc);
-                if (imageArray.Any()) { break; }
+            try {
+                var webpage = new HtmlWeb();
+                HtmlDocument doc = webpage.Load(url);
+                List<string> imageArray = null;
+                foreach (var template in _templates)
+                {
+                    imageArray = template(doc);
+                    if (imageArray.Any()) { break; }
+                }
+                return imageArray.Select(x => _utils.RelativeToAbsoluteUri(url, x));
             }
-            return imageArray.Select(x => _utils.RelativeToAbsoluteUri(url, x));
+            catch(Exception e)
+            {
+                Console.WriteLine("{0}\n{1}",url,e.Message); Console.ReadLine();
+                return new List<string>();
+            }
         }
 
         #region Image Extraction Templates

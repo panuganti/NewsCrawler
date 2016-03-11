@@ -45,11 +45,11 @@ namespace CrawlerContracts
     [DataContract]
     public enum Source
     {
-        [EnumMember]
+        [EnumMember(Value = "TOI")]
         TOI,
-        [EnumMember]
+        [EnumMember(Value = "PTI")]
         PTI,
-        [EnumMember]
+        [EnumMember(Value = "NDTV")]
         NDTV
     }
 }
