@@ -1,0 +1,17 @@
+C:\Projects\NewsPublisher\NewsPublisher\bin\Debug\NewsPublisher.exe.config
+C:\Projects\NewsPublisher\NewsPublisher\bin\Debug\NewsPublisher.exe
+C:\Projects\NewsPublisher\NewsPublisher\bin\Debug\NewsPublisher.pdb
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\NewsPublisher.csprojResolveAssemblyReference.cache
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\MainWindow.g.cs
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\App.g.cs
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\NewsPublisher_MarkupCompile.cache
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\NewsPublisher_MarkupCompile.lref
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\MainWindow.baml
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\NewsPublisher.g.resources
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\NewsPublisher.Properties.Resources.resources
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\NewsPublisher.csproj.GenerateResource.Cache
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\NewsPublisher.exe
+C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\NewsPublisher.pdb
+C:\Projects\NewsPublisher\NewsPublisher\bin\Debug\HtmlAgilityPack.dll
+C:\Projects\NewsPublisher\NewsPublisher\bin\Debug\HtmlAgilityPack.pdb
+C:\Projects\NewsPublisher\NewsPublisher\bin\Debug\HtmlAgilityPack.xml
