@@ -1,0 +1,6 @@
+F:\GitHub\NewsCrawler\IndianNewsCrawler\NewsServiceLibrary\bin\Debug\NewsServiceLibrary.dll
+F:\GitHub\NewsCrawler\IndianNewsCrawler\NewsServiceLibrary\bin\Debug\NewsServiceLibrary.pdb
+F:\GitHub\NewsCrawler\IndianNewsCrawler\NewsServiceLibrary\bin\Debug\Newtonsoft.Json.dll
+F:\GitHub\NewsCrawler\IndianNewsCrawler\NewsServiceLibrary\obj\Debug\NewsServiceLibrary.csprojResolveAssemblyReference.cache
+F:\GitHub\NewsCrawler\IndianNewsCrawler\NewsServiceLibrary\obj\Debug\NewsServiceLibrary.dll
+F:\GitHub\NewsCrawler\IndianNewsCrawler\NewsServiceLibrary\obj\Debug\NewsServiceLibrary.pdb

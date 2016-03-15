@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Projects\NewsPublisher\NewsPublisher\obj\Debug\
+F:\GitHub\NewsCrawler\NewsPublisher\NewsPublisher\obj\Debug\
 NewsPublisher
 none
 false
 DEBUG;TRACE
-C:\Projects\NewsPublisher\NewsPublisher\App.xaml
-11151548125
+F:\GitHub\NewsCrawler\NewsPublisher\NewsPublisher\App.xaml
+22054148089
 
-91073779552
-15965696308
-MainWindow.xaml;
+11166611159
+181307422582
+AutoFetch.xaml;MainWindow.xaml;
 
 True
 

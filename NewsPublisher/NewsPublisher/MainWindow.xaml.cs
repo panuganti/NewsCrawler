@@ -13,6 +13,8 @@ namespace NewsPublisher
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public string[] myVacations = new string[] { };
         string[] imageUrls = new string[] { };
         int imageIndex = 0;
 

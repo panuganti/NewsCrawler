@@ -1,0 +1,5 @@
+F:\GitHub\NewsCrawler\IndianNewsCrawler\CrawlerContracts\bin\Debug\CrawlerContracts.dll
+F:\GitHub\NewsCrawler\IndianNewsCrawler\CrawlerContracts\bin\Debug\CrawlerContracts.pdb
+F:\GitHub\NewsCrawler\IndianNewsCrawler\CrawlerContracts\obj\Debug\CrawlerContracts.csprojResolveAssemblyReference.cache
+F:\GitHub\NewsCrawler\IndianNewsCrawler\CrawlerContracts\obj\Debug\CrawlerContracts.dll
+F:\GitHub\NewsCrawler\IndianNewsCrawler\CrawlerContracts\obj\Debug\CrawlerContracts.pdb
